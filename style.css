@@ -1,0 +1,121 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url(fonts/Minecraft.ttf);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: Minecraft;
+  color: #29524A;
+  resize: none;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F1FF;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+}
+
+#middlecontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.2vh;
+  flex-wrap: wrap-reverse;
+}
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vw;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box {
+  display: grid;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  border: 2px solid #29524A;
+  border-radius: 4px;
+ 
+  
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.eraser {
+  width: 7vw;
+  height:auto;
+}
+.rainbow{
+  width: 6vw;
+  height: 6vw;
+
+}
+.trashcan {
+  width: 6vw;
+  height: auto;
+}
+
+.slidecontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: .8vw;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #29524A;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #201E50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #201E50;
+  cursor: pointer;
+}

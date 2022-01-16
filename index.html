@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+  
+</head>
+
+<body>
+  <div id="title">
+    Etch - A - Sketch! 10x10
+  </div> 
+  <div id="middlecontent">
+    <div id="container">
+      <div id="box"></div>
+    </div>
+    <div id="options">
+      <div id="picker"></div>
+      <img src="Images/eraser.png" class="eraser" onclick="updateCurrentMode('eraser')" />
+      <img src="Images/rainbow.png" class="rainbow" onclick="updateCurrentMode('rainbow')" />
+      <img src="Images/trashcan.png" class="trashcan" onclick="resetBoard()" />
+    </div>
+  </div>
+  <div class="slidecontainer">
+    <input type="range" min="2" max="50" value="8" class="slider" id="myRange">
+  </div>
+</body>
+
+</html>
